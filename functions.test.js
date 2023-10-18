@@ -16,3 +16,17 @@ describe('math functions test', () => {
     test('Add should return the division of two numbers', () => expect(divide(8,2)).toEqual(4))
     
 })
+
+//describe.only and test.only will allow you to run certain tests without running others.
+// you can have multiple .only 's.
+describe.only('math functions test', () => {
+
+    test('Add should return the sum of two numbers', () => expect(add(8,2)).toEqual(10))
+    
+    test('Add should return the subtraction of two numbers', () => expect(subtract(8,2)).toEqual(6))
+    
+    test('Add should return the multiplication of two numbers', () => expect(multiply(8,2)).toEqual(16))
+    
+    test('Add should return the division of two numbers', () => expect(divide(8,2)).toEqual(4))
+    
+})
